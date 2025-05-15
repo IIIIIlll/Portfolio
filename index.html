@@ -4,31 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav id="navbar">
-      <div class="logo">YourName</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle">Toggle Theme</button></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <section id="hero">
-    <h1>Hi, I'm Your Name</h1>
-    <p>Web Developer | Designer | Programmer</p>
+    <h1>Hello, it's Me</h1>
+    <h1><span>Your Name</span></h1>
+    <p>And I'm a <span id="typed"></span></p>
+    <div class="hero-img">
+      <img src="matrix.jpg" alt="Profile Image" />
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <a href="projects.html" class="btn">Download CV</a>
   </section>
 
-  <!-- Additional sections: About, Projects, Testimonials, Contact -->
+  <section id="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A cool web app that does amazing things.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A stylish portfolio template built from scratch.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
 
-  <button id="back-to-top">↑</button>
-
-  <script src="js/script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
+<section id="blog">
+  <h2>Latest Blog Posts</h2>
+  <div class="blog-container">
+    <div class="blog-post">
+      <h3>How I Built My Portfolio</h3>
+      <p>A step-by-step breakdown of building this site using HTML, CSS, and JavaScript.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Frontend Tools I Use Daily</h3>
+      <p>A quick look at the libraries, frameworks, and tools that boost my productivity.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/xrbqrvnl" method="POST" id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
